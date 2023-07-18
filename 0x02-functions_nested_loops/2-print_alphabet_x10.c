@@ -1,19 +1,19 @@
 #include "main.h"
 /**
- * print_alphabet 10 times - prints the english alphabet from a-z.
- * Return: Nothing.
- */
-void print_alphabet_x10(void);
+  * print_alphabet_x10 - repeats the print_alphabet 10 times.
+  * Return: Nothing.
+  */
+void print_alphabet_x10(void)
 {
+	int i;
 	char c;
-	int n;
 
-	for (n = 0; n < 10; n++)
+	for (i = 0; i < 10; ++i)
 	{
 		for (c = 'a'; c <= 'z'; c++)
 		{
-		_putchar(c);
+			_putchar(c);
 		}
+		_putchar('\n');
 	}
-	_putchar('\n');
 }
