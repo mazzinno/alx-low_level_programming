@@ -1,13 +1,14 @@
-#include <stdio.h>
 #include "main.h"
+
 /**
  * _puts - prints a string
- *@str: string to print
- *return : always 0
+ * @str: the string
+ *
+ * Return: the length of the string
  */
 void _puts(char *str)
 {
-	int i;
+	int i = 0;
 
 	while (str[i] != '\0')
 	{
