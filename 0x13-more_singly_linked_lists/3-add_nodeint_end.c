@@ -16,6 +16,11 @@ if (temp == NULL)
 ptr = *head;
 temp->n = n;
 temp->next = NULL;
+if (ptr == NULL)
+{
+*head = temp;
+return (temp);
+}
 while (ptr->next != NULL)
 {
 	ptr = ptr->next;
