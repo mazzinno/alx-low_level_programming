@@ -23,5 +23,5 @@ while (ptr->next != NULL)
     ptr = ptr->next;
 }
 ptr->next = temp;
-return (ptr);
+return (temp);
 }
