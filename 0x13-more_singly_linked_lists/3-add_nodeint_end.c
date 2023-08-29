@@ -11,19 +11,19 @@ listint_t *temp = malloc(sizeof(listint_t));
 
 if (temp == NULL)
 {
-    return (NULL);
+	return (NULL);
 }
 listint_t *ptr;
 ptr = *head;
 if (ptr == NULL)
 {
-    return (NULL);
+	return (NULL);
 }
 temp->n = n;
 temp->next = NULL;
 while (ptr->next != NULL)
-{ 
-    ptr = ptr->next;
+{
+	ptr = ptr->next;
 }
 ptr->next = temp;
 return (temp);
