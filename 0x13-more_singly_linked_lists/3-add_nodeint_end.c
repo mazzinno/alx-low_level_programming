@@ -15,10 +15,6 @@ if (temp == NULL)
 }
 listint_t *ptr;
 ptr = *head;
-if (ptr == NULL)
-{
-	return (NULL);
-}
 temp->n = n;
 temp->next = NULL;
 while (ptr->next != NULL)
