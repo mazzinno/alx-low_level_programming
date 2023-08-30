@@ -11,10 +11,10 @@ int n;
 
 if (head == NULL)
 	return (0);
+n = (*head)->n;
 ptr = *head;
 n = ptr->n;
 *head = (*head)->next;
 free(ptr);
-ptr = NULL;
 return (n);
 }
